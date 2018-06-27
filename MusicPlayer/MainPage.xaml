@@ -5,10 +5,12 @@
     xmlns:local="using:MusicPlayer"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
 
-    <Grid>
-
+    <Grid Background="#edf3fb">
+        <StackPanel VerticalAlignment="Center">
+            <ProgressRing x:Name="loginProgress" HorizontalAlignment="Center" IsActive="True" Foreground="#273140" />
+            <TextBlock HorizontalAlignment="Center" Text="Please wait..." Style="{StaticResource SubtitleTextBlockStyle}" Foreground="#273140"/>
+        </StackPanel>
     </Grid>
 </Page>
